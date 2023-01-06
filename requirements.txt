@@ -2,6 +2,7 @@ behave
 allure-behave
 pandas
 numpy
-mysql.connector
+mysql-connector-python
 google-cloud
 pyarrow
+so
