@@ -1,0 +1,9 @@
+venv/
+others.feature
+note.txt
+*.json
+*.csv
+.DS_Store
+mysql-connect.py
+.idea/
+Features/
