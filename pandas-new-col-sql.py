@@ -20,6 +20,6 @@ df = pd.read_sql(query, conn)
 print(df.head())
 # print(df[df['year'] != 2005].head())
 
-df.to_csv('movie_rating.csv', index=False)
+# df.to_csv('movie_rating.csv', index=False)
 
 conn.close()
