@@ -3,6 +3,6 @@ allure-behave
 pandas
 numpy
 mysql-connector-python
-google-cloud
+google-cloud-bigquery
 pyarrow
 so
