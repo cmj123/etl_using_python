@@ -2,7 +2,7 @@
 import mysql.connector 
 import pandas as pd
 
-conn = mysql.connector.connect(read_default_file = '/Users/lotannadijemeni/.my.cnf')
+conn = mysql.connector.connect(read_default_file = 'C:/Users/conta/.my.cnf')
 
 query = '''
 SELECT title, genre, avg_vote

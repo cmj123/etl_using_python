@@ -1,7 +1,7 @@
 # module 
 import mysql.connector 
 
-conn = mysql.connector.connect(read_default_file = '/Users/lotannadijemeni/.my.cnf')
+conn = mysql.connector.connect(read_default_file = 'C:/Users/conta/.my.cnf')
 cursor = conn.cursor()
 
 query = '''
