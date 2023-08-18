@@ -2,7 +2,7 @@
 import mysql.connector 
 import pandas as pd
 
-conn = mysql.connector.connect(read_default_file = '/Users/lotannadijemeni/.my.cnf')
+conn = mysql.connector.connect(read_default_file = 'C:/Users/conta/.my.cnf')
 
 query = '''
 SELECT year, title, genre, avg_vote,
@@ -20,6 +20,6 @@ df = pd.read_sql(query, conn)
 print(df.head())
 # print(df[df['year'] != 2005].head())
 
-# df.to_csv('movie_rating.csv', index=False)
+df.to_csv('data_files\movie_rating.csv', index=False)
 
 conn.close()

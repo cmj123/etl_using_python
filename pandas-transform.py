@@ -3,7 +3,7 @@ import mysql.connector
 import pandas as pd
 import os 
 
-conn = mysql.connector.connect(read_default_file = '/Users/lotannadijemeni/.my.cnf')
+conn = mysql.connector.connect(read_default_file = 'C:/Users/conta/.my.cnf')
 
 query = '''
 SELECT *
@@ -20,7 +20,7 @@ df.columns = ['date', 'city', 'price']
 df[['state','city']] = df['city'].str.split('-',expand=True)
 df = df[['date','state','city','price']]
 
-df.to_csv('city_housing.csv', index=False)
+df.to_csv('data_files\city_housing.csv', index=False)
 
 print(df.head())
 

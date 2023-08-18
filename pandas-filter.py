@@ -14,6 +14,6 @@ df = pd.read_sql(query, conn)
 
 print(df[df['year'] != 2005].head())
 
-df.to_csv('data_files.csv', index=False)
+df.to_csv('data_files\data_files.csv', index=False)
 
 conn.close()
