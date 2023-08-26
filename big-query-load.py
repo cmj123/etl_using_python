@@ -8,7 +8,8 @@ target_table = 'cultivated-link-373708.sample_dataset.city_housing'
 job_config = bigquery.LoadJobConfig(
     skip_leading_rows=1,
     source_format=bigquery.SourceFormat.CSV,
-    autodetect=True
+    autodetect=True,
+    write_disposition='WRITE_TRUNCATE'
 )
 
 # File vars
